@@ -4,7 +4,7 @@ const projects = [
   {
     name: "Task manager",
     description: "Task manager using MERN stack.",
-    image: "src/assets/delegation.png",
+  image: "/assets/delegation.png",
     link: "https://github.com/Prabesh-Pandey/Task-Manager/tree/b15755cb0dd9cead540f1169cc84436f98848b0a",
   },
   {

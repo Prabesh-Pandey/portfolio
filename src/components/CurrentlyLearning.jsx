@@ -9,7 +9,7 @@ const icons = {
   mongodb: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
   rest: "https://cdn.jsdelivr.net/gh/feathericons/feather/icons/link.svg",
   auth: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
-  tailwind: "src/assets/tss.png",
+  tailwind: "/assets/tss.png",
   dsa: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
   se: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
   oss: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",

@@ -1,0 +1,65 @@
+button, a, input, textarea, select, [role="button"], [tabindex] {
+	cursor: none !important;
+}
+body, html {
+	cursor: none !important;
+}
+@keyframes cursorPulse {
+	0%, 100% { box-shadow: 0 0 0 0 rgba(129, 140, 248, 0.5); }
+	50% { box-shadow: 0 0 0 12px rgba(129, 140, 248, 0); }
+}
+
+.animate-cursorPulse {
+	animation: cursorPulse 1.2s infinite;
+}
+@keyframes blink {
+	0%, 100% { opacity: 1; }
+	50% { opacity: 0; }
+}
+
+.animate-blink {
+	animation: blink 1s steps(1) infinite;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	background: linear-gradient(135deg, #161b22 0%, #23272f 50%, #2c2f36 100%);
+	color: #e5e7eb;
+	font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+	min-height: 100vh;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	color: #fff;
+	margin-top: 0;
+}
+
+a {
+	color: #818cf8;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+a:hover {
+	color: #a5b4fc;
+}
+button, .btn {
+	padding: 0.5rem 1.5rem;
+	border-radius: 9999px;
+	background: linear-gradient(90deg, #6366f1 0%, #3b82f6 100%);
+	color: #fff;
+	font-weight: 600;
+	box-shadow: 0 4px 24px 0 rgba(49, 46, 129, 0.15);
+	border: none;
+	cursor: pointer;
+	transition: background 0.2s, box-shadow 0.2s;
+	outline: none;
+}
+button:hover, .btn:hover {
+	background: linear-gradient(90deg, #4f46e5 0%, #2563eb 100%);
+}

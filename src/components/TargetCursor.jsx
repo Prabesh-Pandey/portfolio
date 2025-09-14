@@ -1,7 +1,21 @@
-import { useEffect, useRef, useCallback, useMemo } from 'react';
+import { useEffect, useRef, useCallback, useMemo, useState } from 'react';
 import { gsap } from 'gsap';
 
 const TargetCursor = ({ targetSelector = '.cursor-target', spinDuration = 2, hideDefaultCursor = true }) => {
+  // Detect mobile/touch device
+  const [isTouch, setIsTouch] = useState(false);
+  useEffect(() => {
+    const checkTouch = () => {
+      setIsTouch(
+        'ontouchstart' in window ||
+        navigator.maxTouchPoints > 0 ||
+        navigator.msMaxTouchPoints > 0
+      );
+    };
+    checkTouch();
+    window.addEventListener('resize', checkTouch);
+    return () => window.removeEventListener('resize', checkTouch);
+  }, []);
   const cursorRef = useRef(null);
   const cornersRef = useRef(null);
   const spinTl = useRef(null);
@@ -16,6 +30,7 @@ const TargetCursor = ({ targetSelector = '.cursor-target', spinDuration = 2, hid
   );
     // Automatically target all interactive elements
     const autoTargetSelector = 'button, a, input, textarea, select, [role="button"], [tabindex]';
+    if (isTouch) return null;
 
   const moveCursor = useCallback((x, y) => {
     if (!cursorRef.current) return;

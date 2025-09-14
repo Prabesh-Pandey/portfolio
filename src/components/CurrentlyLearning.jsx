@@ -34,7 +34,7 @@ export default function CurrentlyLearning() {
       {topics.map((topic, idx) => (
         <div
           key={topic.label}
-          className="group relative flex items-center gap-4 bg-white/10 backdrop-blur-lg rounded-xl px-8 py-8 text-white shadow-lg border border-white/20 transition-all duration-300 hover:scale-[1.06] hover:border-cyan-400 hover:shadow-cyan-500/30 hover:bg-white/20"
+          className="group relative flex items-center gap-4 bg-white/10 backdrop-blur-lg rounded-xl px-8 py-8 text-white shadow-lg border border-white/20 transition-all duration-300 hover:scale-[1.06] hover:border-cyan-400 hover:shadow-cyan-500/30 hover:bg-white/20 cursor-target"
           style={{ animation: `fadeInUp 0.5s ${idx * 0.08}s both` }}
         >
           <div className="flex-shrink-0 group">

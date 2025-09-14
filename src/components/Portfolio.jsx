@@ -29,8 +29,8 @@ export default function Portfolio() {
         {projects.map((project, idx) => (
           <div
             key={project.name}
-            className="group relative flex flex-col items-center bg-white/10 backdrop-blur-lg rounded-2xl px-8 py-8 text-white shadow-2xl border border-white/20 transition-all duration-300 hover:scale-[1.06] hover:border-cyan-400 hover:shadow-cyan-500/30 hover:bg-white/20 pointer-events-auto"
-            style={{ animation: `fadeInUp 0.5s ${idx * 0.08}s both` }}
+            className="group relative flex flex-col items-center bg-white/10 backdrop-blur-lg rounded-2xl px-8 py-8 text-white shadow-2xl border border-white/20 transition-all duration-300 pointer-events-auto cursor-target"
+            style={{ animation: `fadeInUp 0.5s ${idx * 0.08}s both`, borderStyle: 'dashed', borderWidth: '2px' }}
           >
             <a
               href={project.link}

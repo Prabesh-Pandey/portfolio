@@ -20,33 +20,33 @@ export default function Contact() {
           name="name"
           placeholder="Your Name"
           required
-          className="px-4 py-3 rounded-lg bg-gray-900 text-white placeholder-gray-400 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          className="px-4 py-3 rounded-lg bg-gray-900 text-white placeholder-gray-400 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 cursor-target"
         />
         <input
           type="email"
           name="email"
           placeholder="Your Email"
           required
-          className="px-4 py-3 rounded-lg bg-gray-900 text-white placeholder-gray-400 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          className="px-4 py-3 rounded-lg bg-gray-900 text-white placeholder-gray-400 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 cursor-target"
         />
         <textarea
           name="message"
           placeholder="Your Message"
           required
           rows={4}
-          className="px-4 py-3 rounded-lg bg-gray-900 text-white placeholder-gray-400 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          className="px-4 py-3 rounded-lg bg-gray-900 text-white placeholder-gray-400 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 cursor-target"
         />
         <button
           type="submit"
-          className="px-6 py-3 bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white text-lg font-semibold rounded-full shadow-lg border-2 border-indigo-400 hover:border-blue-400 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-indigo-300"
+          className="px-6 py-3 bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white text-lg font-semibold rounded-full shadow-lg border-2 border-indigo-400 hover:border-blue-400 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-indigo-300 cursor-target"
         >
           Send Message
         </button>
       </form>
       <div className="mt-8 flex gap-6 text-gray-400">
-        <a href="mailto:prabesh.code@gmail.com" className="hover:text-indigo-400 transition-colors">Email</a>
-        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-400 transition-colors">LinkedIn</a>
-        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-400 transition-colors">GitHub</a>
+        <a href="mailto:prabesh.code@gmail.com" className="hover:text-indigo-400 transition-colors cursor-target">Email</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-400 transition-colors cursor-target">LinkedIn</a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-400 transition-colors cursor-target">GitHub</a>
       </div>
     </section>
   );

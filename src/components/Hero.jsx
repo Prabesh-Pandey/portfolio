@@ -72,7 +72,8 @@ export default function Hero() {
 
       {/* Glassmorphism card */}
       <div
-        className="relative z-10 max-w-2xl w-full text-center bg-white/10 backdrop-blur-2xl rounded-3xl shadow-2xl border border-white/20 flex flex-col items-center animate-fade-in p-12 md:p-16 min-h-[320px]"
+        className="relative z-10 w-[1000px] max-w-full text-center bg-white/10 backdrop-blur-2xl rounded-3xl shadow-2xl border border-white/20 flex flex-col items-center animate-fade-in p-20 md:p-32 min-h-[650px]"
+        style={{ minHeight: 650, minWidth: 1000, maxWidth: '100%' }}
       >
         <h1 className="text-5xl sm:text-6xl font-black text-white mb-6 drop-shadow-xl tracking-tight animate-slide-down break-words max-w-full">
           <span className="whitespace-pre-line break-words max-w-full inline-block align-middle">{typedText}</span>
@@ -84,7 +85,7 @@ export default function Hero() {
         </p>
         <a
           href="#portfolio"
-          className="px-10 py-4 bg-gradient-to-r from-indigo-500 via-blue-500 to-pink-500 hover:from-indigo-600 hover:to-blue-600 text-white text-xl font-bold rounded-full shadow-xl border-2 border-indigo-400 hover:border-pink-400 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-indigo-300 animate-pop"
+          className="px-10 py-4 bg-gradient-to-r from-indigo-500 via-blue-500 to-pink-500 hover:from-indigo-600 hover:to-blue-600 text-white text-xl font-bold rounded-full shadow-xl border-2 border-indigo-400 hover:border-pink-400 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-indigo-300 animate-pop cursor-target"
         >
            See My Work
         </a>

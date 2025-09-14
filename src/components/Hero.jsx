@@ -72,8 +72,7 @@ export default function Hero() {
 
       {/* Glassmorphism card */}
       <div
-        className="relative z-10 w-[1000px] max-w-full text-center bg-white/10 backdrop-blur-2xl rounded-3xl shadow-2xl border border-white/20 flex flex-col items-center animate-fade-in p-20 md:p-32 min-h-[650px]"
-        style={{ minHeight: 650, minWidth: 1000, maxWidth: '100%' }}
+        className="relative z-10 w-full max-w-full text-center bg-white/10 backdrop-blur-2xl rounded-3xl shadow-2xl border border-white/20 flex flex-col items-center animate-fade-in p-6 sm:p-12 md:p-20 lg:p-32 min-h-[320px] sm:min-h-[400px] md:min-h-[650px] lg:w-[1000px]"
       >
         <h1 className="text-5xl sm:text-6xl font-black text-white mb-6 drop-shadow-xl tracking-tight animate-slide-down break-words max-w-full">
           <span className="whitespace-pre-line break-words max-w-full inline-block align-middle">{typedText}</span>

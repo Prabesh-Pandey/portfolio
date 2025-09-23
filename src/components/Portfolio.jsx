@@ -10,7 +10,7 @@ const projects = [
   {
     name: "Project Two",
     description: "simple udp base guess the number game .",
-    image: "public/vector.jpg",
+    image: "public/assets/gs.png",
     link: "https://github.com/Prabesh-Pandey/UDP-Based-Guess-the-Number-Game.git",
   },
   {

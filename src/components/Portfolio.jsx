@@ -9,9 +9,9 @@ const projects = [
   },
   {
     name: "Project Two",
-    description: "A brief description of the project goes here.",
-    image: "https://placehold.co/96x96/png",
-    link: "#",
+    description: "simple udp base guess the number game .",
+    image: "public/vector.jpg",
+    link: "https://github.com/Prabesh-Pandey/UDP-Based-Guess-the-Number-Game.git",
   },
   {
     name: "Project Three",
